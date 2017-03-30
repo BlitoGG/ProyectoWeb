@@ -8,10 +8,13 @@
         <link rel="stylesheet" href="./CSS/myCSS.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
         <script src="./JS/myJS.js"></script>
     </head>
-    <body class="beis">
-        <nav class="navbar navbar-default no-border">
+    <body ng-app="myApp">
+
+        <nav class="navbar navbar-bright navbar-fixed-top" role="banner" >
             <div class="container-fluid beis">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
@@ -23,47 +26,61 @@
                 </div>
             </div>
         </nav>
+
+        <div id="masthead">
+          <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <h1>Bootply
+                    <p class="lead">The easiest way to apply Bootstrap</p>
+                  </h1>
+                </div>
+                <div class="col-md-5">
+                    <div class="well well-lg">
+                      <div class="row">
+                        <div class="col-sm-6">
+                            <img src="//placehold.it/180x100" class="img-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            <strong>Important</strong>
+                            <p>Blah blah blah blah bla!</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div><!-- /cont -->
+        </div>
+
         <div class="container-fluid container-margen">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3" id="leftCol">
                     <div class="collapse navbar-collapse" id="menu">
-                        <ul class="nav nav-pills nav-stacked">
+                        <ul class="nav nav-pills nav-stacked" id="sidebar">
                             <li class="active"><a data-toggle="pill" href="#inicio">Inicio</a></li>
                             <li><a data-toggle="pill" href="#info">Sobre mi</a></li>
-                            <li><a id="trabajos" data-toggle="collapse" data-target="#item1" href="#">Trabajos<span id="trabajos" class="glyphicon glyphicon-plus"></span></a>
+                            <li id="trabajos"><a id="trabajos" data-toggle="collapse" data-target="#item1">Trabajos<span id="trabajos" class="glyphicon glyphicon-plus"></span></a>
                                 <ul class="nav nav-stacked collapse" id="item1">
-                                    <li><a data-toggle="pill" href="#trabajo1">Trabajo 1</a></li>
-                                    <li><a data-toggle="pill" href="#trabajo2">Trabajo 2</a></li>
+                                    <li id="trabajos"><a data-toggle="pill" href="#trabajo1">Trabajo 1</a></li>
+                                    <script src="JS/trabajos.js"></script>
+                                    <li id="trabajos"><a data-toggle="pill" href="#trabajo2">Trabajo 2</a></li>
                                 </ul>
                             </li>
-                            <li><a data-toggle="pill" href="#menu1">Contacto</a></li>
+                            <li><a data-toggle="pill" href="#contacto">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-9">
-                    <div class="tab-content">
-                        <!--Inicio-->
-                        <div id="inicio" class="tab-pane fade in active">
-                          <h3 class="fix-margen">Bienvenido a Ortigalia</h3>
-                        </div>
-                        <!--Sobre Mi-->
-                        <div id="info" class="tab-pane fade">
-                          <h3 class="fix-margen">Beneficios para la salud</h3>
-                        </div>
-                        <!--Trabajos-->
-                        <div id="trabajo1" class="tab-pane fade">
-                          <h3 class="fix-margen">Trabajo1</h3>
-                        </div>
-                        <!--Trabajo1-->
-                        <div id="trabajo2" class="tab-pane fade">
-                          <h3 class="fix-margen">Trabajo2</h3>
-                        </div>
+                    <div class="tab-content" ng-view>
+                     <!--Añadimos el contenido con Angular ngRoute-->
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
 
+        <footer>
         </footer>
+        <script src="./JS/templates.js"></script>
     </body>
 </html>
+<!-http://www.bootply.com/90936# Bootstrap para menu-->

@@ -1,3 +1,80 @@
 span#trabajos{
     float: right;
 }
+
+.affix-top,.affix{
+	position: static;
+}
+
+body {
+	padding-top:50px;
+}
+
+#masthead {
+	min-height:270px;
+	background-color:#000044;
+  	color:#aaaacc;
+}
+
+#masthead h1 {
+	font-size: 55px;
+	line-height: 1;
+}
+
+#masthead .well {
+	margin-top:13%;
+	background-color:#111155;
+  	border-color:#000033;
+}
+
+.icon-bar {
+	background-color:#fff;
+}
+
+@media screen and (min-width: 768px) {
+	#masthead h1 {
+		font-size: 100px;
+	}
+}
+.navbar-bright {
+	background-color:#111155;
+    color:#fff;
+}
+
+.navbar-bright a, #masthead a, #masthead .lead {
+  	color:#aaaacc;
+}
+
+.navbar-bright li > a:hover {
+    background-color:#000033;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    position: static;
+  	margin-top:30px;
+  	width:100%;
+  }
+
+  #sidebar.affix {
+    position: fixed;
+    top:60px;
+    width:21.39999%;
+  }
+}
+
+#sidebar li.active {
+  	border:0 #eee solid;
+  	border-right-width:4px;
+}
+
+#sidebar li li.active {
+  	border:0 #ccc solid;
+  	border-right-width:3px;
+}
+a#trabajos.active{
+    color: #fff;
+    border:0 #eee solid;
+  	border-right-width:4px;
+    background-color: #337ab7
+}

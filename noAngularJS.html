@@ -8,8 +8,6 @@
         <link rel="stylesheet" href="./CSS/myCSS.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
         <script src="./JS/myJS.js"></script>
     </head>
     <body class="beis">
@@ -42,15 +40,30 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-9" ng-app="myApp">
-                    <div class="tab-content" ng-view>
-                     <!--Añadimos el contenido con Angular ngRoute-->
+                <div class="col-sm-9">
+                    <div class="tab-content">
+                        <!--Inicio-->
+                        <div id="inicio" class="tab-pane fade in active">
+                          <h3 class="fix-margen">Bienvenido a Ortigalia</h3>
+                        </div>
+                        <!--Sobre Mi-->
+                        <div id="info" class="tab-pane fade">
+                          <h3 class="fix-margen">Beneficios para la salud</h3>
+                        </div>
+                        <!--Trabajos-->
+                        <div id="trabajo1" class="tab-pane fade">
+                          <h3 class="fix-margen">Trabajo1</h3>
+                        </div>
+                        <!--Trabajo1-->
+                        <div id="trabajo2" class="tab-pane fade">
+                          <h3 class="fix-margen">Trabajo2</h3>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <footer>
+
         </footer>
-        <script src="./JS/templates.js"></script>
     </body>
 </html>
