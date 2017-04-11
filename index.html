@@ -10,7 +10,24 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-        <script src="./JS/myJS.js"></script>
+
+        
+        <!--Carrusel-->
+        <link rel="stylesheet" href="css/feature-carousel.css" charset="utf-8" />
+        <script src="js/jquery.featureCarousel.min.js" type="text/javascript" charset="utf-8"></script>
+        
+        <!--Iconos-->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./Images/Favicon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./Images/Favicon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./Images/Favicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./Images/Favicon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./Images/Favicon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./Images/Favicon/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="./Images/Favicon/favicon-32x32.png" sizes="32x32" />
+       
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.png" />
     </head>
     <body ng-app="myApp">
 
@@ -54,7 +71,7 @@
 
         <div class="container-fluid container-margen">
             <div class="row">
-                <div class="col-sm-3" id="leftCol">
+                <div class="col-sm-3 menu" id="leftCol">
                     <div class="collapse navbar-collapse" id="menu">
                         <ul class="nav nav-pills nav-stacked" id="sidebar">
                             <li class="active"><a data-toggle="pill" href="#inicio">Inicio</a></li>
@@ -62,7 +79,6 @@
                             <li id="trabajos"><a id="trabajos" data-toggle="collapse" data-target="#item1">Trabajos<span id="trabajos" class="glyphicon glyphicon-plus"></span></a>
                                 <ul class="nav nav-stacked collapse" id="item1">
                                     <li id="trabajos"><a data-toggle="pill" href="#trabajo1">Trabajo 1</a></li>
-                                    <script src="JS/trabajos.js"></script>
                                     <li id="trabajos"><a data-toggle="pill" href="#trabajo2">Trabajo 2</a></li>
                                 </ul>
                             </li>
@@ -70,17 +86,22 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-9">
+                <div class="col-sm-9 col-md-9">
                     <div class="tab-content" ng-view>
                      <!--Añadimos el contenido con Angular ngRoute-->
                     </div>
                 </div>
             </div>
         </div>
+        
+        <script src="./JS/myJS.js"></script>
+        <script src="./JS/templates.js"></script>
+        <script src="./JS/trabajos.js"></script>
+        <script src="./JS/modal.js"></script>
+        <script src="./JS/contacto.js"></script>
 
         <footer>
         </footer>
-        <script src="./JS/templates.js"></script>
     </body>
 </html>
 <!-http://www.bootply.com/90936# Bootstrap para menu-->
