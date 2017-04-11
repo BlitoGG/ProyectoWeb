@@ -14,7 +14,8 @@
         <br>
         <div class="form-group col-md-offset-2 col-md-8 col-md-offset-2">
           <label for="comment">Comentario:</label>
-          <textarea class="form-control" rows="10" id="comment" placeholder="Comentario (500 caracteres)"></textarea>
+          <div id="info" class="text-primary">Máximo 500 caracteres</div>
+          <textarea class="form-control" rows="10" id="comment" onkeypress="return limita(event, 500);" onkeyup="actualizaInfo(500)" placeholder="Comentario(500 caracteres)"></textarea>
         </div>
         <br>
         <div class="col-md-offset-2 col-md-8 col-md-offset-2">
