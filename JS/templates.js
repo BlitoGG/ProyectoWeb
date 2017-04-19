@@ -1,9 +1,6 @@
 var app = angular.module("myApp", ["ngRoute"]);
 app.config(function($routeProvider) {
     $routeProvider
-    .when("/inicio", {
-        templateUrl : "./Templates/inicio.html",
-    })
     .when("/info", {
         templateUrl : "./Templates/info.html",
     })

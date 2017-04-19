@@ -30,7 +30,7 @@ function actualizaInfo(maximoCaracteres) {
         info.classList.remove("text-danger");
         info.classList.add("text-primary");
     }
-    else if(elemento.value.length==500){
+    else if(elemento.value.length==1000){
         info.innerHTML = "Máximo "+maximoCaracteres+" caracteres";
         info.classList.remove("text-primary");
         info.classList.add("text-danger");
