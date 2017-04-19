@@ -49,12 +49,12 @@ function valida() {
     var correo = document.getElementById("mail").value;
     var comentario = document.getElementById("comment").value;
     
-    if( usuario == null || usuario.length == 0 || /^([a-zñáéíóú]+[\s]*)+$/.test(usuario) ) {
+    if( usuario == null || usuario.length == 0 || !/^([a-zñáéíóú A-ZÁÉÍÓÚ]+[\s]*)+$/.test(usuario) ) {
       // Si no se cumple la condicion...
       alert('[ERROR] Nombre');
       return false;
   }
-    else if( correo == null || correo.length == 0 || /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(correo) ) {
+    else if( correo == null || correo.length == 0 || !/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/.test(correo) ) {
       // Si no se cumple la condicion...
       alert('[ERROR] Correo');
       return false;
