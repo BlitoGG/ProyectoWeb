@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>OBR Fotografía</title>
+        <meta name="keywords" content="fotografía,fotos,camaras">
+        <meta name="description" content="Página donde subo trabajos o reportajes fotográficos.">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./CSS/blueimp-gallery.min.css">
@@ -37,7 +40,7 @@
         </script>
 
     </head>
-    <body ng-app="myApp">
+    <body ng-app="myApp" onload="redireccion();">
         <nav class="navbar navbar-bright navbar-fixed-top" role="banner" >
             <div class="container-fluid beis">
                 <div class="navbar-header">
@@ -111,6 +114,11 @@
         </div>
 
         <!--Scripts-->
+        <script>
+            function redireccion(){
+                window.location="http://pablogg.esy.es/Proyecto/#/info";
+            }
+        </script>
         <script src="./JS/cookies.js"></script>
         <script src="./JS/myJS.js"></script>
         <script src="./JS/templates.js"></script>
@@ -125,4 +133,4 @@
         <a><i class="fa fa-wordpress"></i></a>
     </footer>
 </html>
-<!-http://www.bootply.com/90936# Bootstrap para menu-->
+

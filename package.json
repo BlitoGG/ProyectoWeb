@@ -18,8 +18,10 @@
   "homepage": "https://github.com/BlitoGG/ProyectoWeb#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
     "gulp-concat": "^2.6.1",
     "gulp-html-minifier2": "^1.1.8",
+    "gulp-htmlhint": "^0.3.1",
     "gulp-jimp": "^1.2.7",
     "gulp-jshint": "^2.0.4",
     "gulp-mcss": "^1.0.2",
