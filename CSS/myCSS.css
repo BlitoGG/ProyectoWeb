@@ -107,6 +107,11 @@ a#trabajos.active{
     background-color: #337ab7
 }
 
+/*Info*/
+
+#camaras{
+    margin: 0 auto;
+}
 
 /*Formulario Contacto*/
 form{
@@ -170,3 +175,5 @@ footer {
 footer a{
     cursor: pointer;
 }
+
+
